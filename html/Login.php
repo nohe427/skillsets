@@ -60,7 +60,7 @@ else
 <table border="1" width="983" height="120">
 	<tr>
 		<td height="120" width="86" style="border-style: solid; border-width: 1px">
-		<a href="Home.html">
+		<a href="index.html">
 		<img border="0" src="globe.jpeg" width="128" height="128"></a></td>
 		<td height="120" width="881">
 		<p align="center"><font size="7">Login</font></td>
