@@ -15,7 +15,7 @@ Include "connection.php";
    exit();
   }
 
-  $query = 'select * from USERS '
+  $query = 'select * from Login '
            ."where name='$userid' "
            ." and password='$password'";
 
@@ -26,7 +26,7 @@ Include "connection.php";
     $_SESSION['valid_user'] = $userid;    
   }
   
-  $levelquerys = "select `AL` from USERS where USERID='$userid' and PASSWORD='$password'";
+  $levelquerys = "select `AL` from Login where USERID='$userid' and PASSWORD='$password'";
   $resultq = $db_conn->query($levelquerys);
   $levelresult = mysql_fetch_assoc($result);
   $test = $levelresult['AL'];
@@ -68,7 +68,7 @@ else
 </table>
 
 <body>
-<?
+<?php
  
   if (isset($_SESSION['valid_user']))
   {
