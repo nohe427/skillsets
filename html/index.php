@@ -134,9 +134,9 @@ elseif ($_SESSION['level'] == 2)
 <table border="1" width="983" height="120">
 	<tr>
 		<td height="120" width="86" style="border-style: solid; border-width: 1px">
-		<img border="0" src="Lower%20Shore%20Insurance%20Company%20Logo.png" width="128" height="128"></td>
+		<img border="0" src="globe.jpeg" width="128" height="128"></td>
 		<td height="120" style="width: 3150px">
-		<p align="center"><font size="7">Agent Home Page</font></td>
+		<p align="center"><font size="7">Analyst Home Page</font></td>
 		<td height="120" width="881">
 		You are currently logged in&nbsp; as:<br>
 		<br><?php echo $_SESSION['valid_user']; ?>
@@ -150,7 +150,7 @@ echo '<p align="center">&nbsp;</p>';
 <ul>
 	<li>
 	<p align="left"><font size="5">
-	<a href="AllPolicies.php">All Policies</a></font></li>
+	<a href="AllPolicies.php">All Analysts (Viewing)</a></font></li>
 </ul>
 <?php
 echo'<p>&nbsp;</p>';
@@ -158,32 +158,21 @@ echo'<p>&nbsp;</p>';
 <ul>
 	<li>
 	<p align="left"><font size="5">
-	<a href="AllAgents.php">All Agents</a></font></li>
+	<a href="AllAgents.php">All Skills</a></font></li>
 </ul>
 <p align="left">&nbsp;</p>
 <ul>
 	<li>
 	<p align="left"><font size="5">
-	<a href="AllCustomers.php">All Customers</a></font></li>
+	<a href="AllCustomers.php">Search for a Skill</a></font></li>
 </ul>
 <p align="left">&nbsp;</p>
 <ul>
 	<li>
 	<p align="left"><font size="5">
-	<a href="LocationInformation.php">All Locations</a></font></li>
+	<a href="LocationInformation.php">Search for an Analyst</a></font></li>
 </ul>
 <p align="left">&nbsp;</p>
-<ul>
-	<li>
-	<p align="left"><font size="5">
-	<a href="PoliciesByCustomer.php">Policy By Customer</a></font></li>
-</ul>
-<p align="left">&nbsp;</p>
-<ul>
-	<li>
-	<p align="left"><font size="5">
-	<a href="claimsReports.php">Claims by Policy Number</a></font></li>
-</ul>
 <p align="left">&nbsp;</p>
 <?php
 //echo '<p>'.$_SESSION['level'].'user</p>';
