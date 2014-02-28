@@ -22,6 +22,14 @@ $(document).ready(function() {
 				success: function(html){
 					$("ul#results").html(html);
 				}
+			$.ajax({
+				type: "POST",
+				url: "search.php",
+				data: { query: query_value },
+				cache: false,
+				success: function(html){
+					$("ul#results").html(html);
+				}
 			});
 		}return false;    
 	}
